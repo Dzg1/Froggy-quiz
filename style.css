@@ -1,9 +1,13 @@
+@font-face {
+    font-family: "applejuice";
+    src: url(/assets/font/Apple\ Juice\ Regular.ttf);
+}
 *{
     --color1 : #f1f1f1;
     --color2 : #b3b966;
     --color3 : #e25421;
     --color4 : #262626;
-    --font1 : ;
+    --font1 : 'applejuice', sans-serif;
     --font2 : ;
     --font3: 'Poppins', sans-serif;
 }
@@ -22,8 +26,17 @@ li{
 
 nav {
     display: flex;
-    background: #f1f1f1;
+    justify-content: space-between;
+    background: var(--color1);
     height:70px;
+    box-shadow: 0px 1px 10px 1px #0000003d;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 10px;
 }
 .burger {
     display: flex;
@@ -63,22 +76,46 @@ nav {
     width: 60px;
     margin: 5px;
 }
+h1{
+    width: 250px;
+    margin-left: 20px;
+    color: var(--color3);
+    font-family: var(--font1);
+    font-size: 2rem;
+}
 .nav-right{
     display: flex;
- justify-content: center;
  align-items: center;
     width:100%;
-    justify-content: right;
+    justify-content: flex-end;
+}
+.container-search{
+    position:relative;
 }
 .search{
-    width:400px;
-    height:40px;
+   
+    width:300px;
+    height:30px;
     border-radius:20px;
     border: var(--color2) 1px solid;
     outline: none;
-    padding: 0 10px;
+    padding: 0 20px;
 }
-
+.loupe{
+    position: absolute;
+    right:-29px;
+    height: 30px;
+    border: var(--color2) 1px solid;
+    border-top-right-radius: 20px;
+    border-end-end-radius:20px;
+    background:;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.loupe img{
+    padding: 2px 10px 0 5px;
+    height:20px;
+}
 ::placeholder{
     color: var(--color2);
 
@@ -86,11 +123,11 @@ nav {
 
 nav ul {
     display: flex;
-    width: 20%;
+    width: 300px;
     height: 70px;
-  
+  justify-content:center;
     align-items: center;
-    margin:0 60px ;
+padding-right: 40px;
 }
 
 .item-nav{
@@ -102,6 +139,7 @@ align-items: center;
     font-family: var(--font3);
     color: var(--color2);
     transition: linear 0.2s;
+    cursor: pointer;
 }
 
 .item-nav:hover {
