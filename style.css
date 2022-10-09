@@ -23,6 +23,9 @@ img{
 li{
     list-style: none;
 }
+a{
+    text-decoration: none;
+}
 
 nav {
     display: flex;
@@ -97,7 +100,7 @@ h1{
     width:300px;
     height:30px;
     border-radius:20px;
-    border: var(--color2) 1px solid;
+    border: var(--color4) 1px solid;
     outline: none;
     padding: 0 20px;
 }
@@ -105,7 +108,7 @@ h1{
     position: absolute;
     right:-29px;
     height: 30px;
-    border: var(--color2) 1px solid;
+    border: var(--color4) 1px solid;
     border-top-right-radius: 20px;
     border-end-end-radius:20px;
     background:;
@@ -150,14 +153,202 @@ align-items: center;
 
 body{
     background:white;
+    font-family: var(--font3) ;
 }
 .container-margin{
     margin: 0 10%;
 }
 .container-body{
     width: 100%;
+    height: 400px;
     background: var(--color1);
     border-radius: 10px;
     box-shadow: 0px 0px 10px 2px #0000003d;;
     margin:  60px 0;
+    padding: 20px;
 }
+.cards {
+    display: flex;
+     justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.card  {
+    position: relative;
+    display: flex;
+    min-width: 200px;
+    height: 250px;
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    transform-style: preserve-3d;
+    transition: .5s;
+
+}
+
+.card .fnb {
+    display: flex;
+    position: absolute;
+    border-radius: 10%;
+
+    width: 100%;
+    height: 100%;
+
+transform-style: preserve-3d;
+backface-visibility: hidden;
+transition:1.7s;
+transform: perspective(500px) rotatey(0deg);
+
+}
+.front-face{
+    justify-content: center;
+    align-items: center
+}
+.back-face{
+    justify-content: center;
+align-items: flex-start;
+}
+
+.front-face{
+    border: var(--color4) 1px solid;
+    background: rgb(179,185,102);
+    background: linear-gradient(147deg, rgba(179,185,102,1) 52%, rgba(226,84,33,1) 100%);
+ }
+ .ff2{
+    background: url(/assets/image/background-white-pattoune.png);
+    background-size: contain;
+ }
+ .ff3{
+    background: url(/assets/image/background-dark-pattoune.png);
+    background-size: contain;
+ }
+ .ff4{
+    background: url(/assets/image/background-interogation-white.png);
+    background-size: contain;
+ }
+ .ff5{
+    background: url(/assets/image/background-interogation-dark.png);
+    background-size: contain;
+ }
+.card .fnb.back-face {
+    border:inset 2px  var(--color4);
+
+    transform: perspective(500px) rotatey(180deg);
+}
+
+.bf1{
+    background: url(./assets/image/Harry-Potter-l-annonce-que-tous-les-fans-attendaient-avec-impatience.jpg);
+    background-size: cover;
+}
+.bf2{
+    background: url(/assets/image/histoire.png);
+    background-size: cover;
+
+
+}
+.bf3{
+    background: url(/assets/image/kaamelott.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.bf4{
+    background: url(/assets/image/one-piece.png);
+    background-size: cover;
+    background-position: center;
+}
+.bf5{
+    background: url(/assets/image/capitale.png);
+    background-size: cover;
+    background-position: center; 
+}
+
+
+.card:hover .fnb.front-face{
+    transform: perspective(500px) rotatey(180deg);
+}
+.card:hover .fnb.back-face{
+    transform: perspective(500px) rotatey(360deg);
+}
+.card:hover .buttonbtn {
+    transform: perspective(500px) translateZ(50px) translatex(30px);
+}
+h2 {
+    color: var(--color2);
+    text-decoration: none;
+    font-family: var(--poppins);
+    font-size: 44px;
+    transform: perspective(500px) translateZ(70px);
+margin: 0px;
+
+}
+h3{
+    color: var(--color2);
+    text-decoration: none;
+    font-family: var(--poppins);
+    font-size: 2rem;
+    transform: perspective(500px) translateZ(70px);
+    text-shadow: 0 0 2px #000;
+    margin: 0px;
+}
+h4{
+    color: var(--color4);
+    font-size: 0.9rem;
+    margin:30px;
+    transform: perspective(500px) translateZ(50px);
+    text-align: center;
+
+}
+.contraste{
+    background: #b3b96657 ;
+    border-radius: 3px;
+    padding: 2px;
+}
+ .buttonbtn{
+    position: absolute;
+    bottom: 70px;
+    right:30px;
+    width:150px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(179,185,102);
+    background: linear-gradient(147deg, rgba(179,185,102,1) 52%, rgba(226,84,33,1) 100%);
+    border: none;
+    transform: perspective(500px) translateZ(50px);
+transition: .4s ease-out;
+color: var(--color1);
+font-family: var(--poppins);
+text-align: center;
+border:inset 1px  var(--color4);
+ }
+
+ .bbtn2 {
+    background: url(/assets/image/background-white-pattoune.png);
+    background-size: contain;
+    color: var(--color4);
+ }
+ .bbtn3 {
+    background: url(/assets/image/background-dark-pattoune.png);
+    background-size: contain;
+    color: var(--color1);
+ }
+ .bbtn4 {
+    background: url(/assets/image/background-interogation-white.png);
+    background-size: contain;
+    color: var(--color4);
+ }
+ .bbtn5 {
+    background: url(/assets/image//background-interogation-dark.png);
+    background-size: contain;
+    color: var(--color1);
+ }
+
+ .buttonbtn:hover {
+
+border:inset 1px  var(--color3);
+color: var(--color3);
+letter-spacing: 1.5px;
+ }
