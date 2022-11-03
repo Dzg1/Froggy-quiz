@@ -8,93 +8,132 @@
     <title>Froggy Quiz</title>
     <link rel="stylesheet" href="/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="/script.js" defer></script>
 </head>
 
 <body>
     <nav>
         <div class="nav-left">
-        <button class="burger">
-            <span class="bar"></span>
-        </button>
-        <a href="#"><img src="/assets/image/Froggy-Quizv2.png" alt="logo froggy quiz" class="logo"></a>
-        <h1>FROGGY QUIZ</h1>
-    </div>
+            <button class="burger">
+                <span class="bar"></span>
+            </button>
+            <div class="logo-container">
+                <div class="logo-container-1">
+                    <a href="#" class="img-1"><img src="/assets/image/F-logo.png" alt="logo froggy quiz"
+                            class="logo"></a>
+                    <div class="sp1 logospan">
+                        <span class="spsp spsp1">ROGGY</span>
+                    </div>
+                </div>
+                <div class="logo-container-2">
+                    <a href="#" class="img-2"><img src="/assets/image/q-logo.png" alt="logo froggy quiz"                         class="logo"></a>
+                    <div class="sp2 logospan">
+                    <span class="spsp spsp2">UIZ</span>
+                </div>
+            </div>
+            </div>
+        </div>
         <div class="nav-right">
             <div class="container-search">
                 <button class="loupe" type="submit"><img src="/assets/image/loupe.png" alt="image de loupe"></button>
                 <input type="search" class="search" placeholder="Rechercher">
-    </div>
-      <ul>
-            <li class="item-nav login"><strong>Login</strong></li>
-            <li class="item-nav jouer"><strong>Jouer</strong></li>
-            <li class="item-nav boutique"><strong>Boutique</strong></li>
-        </ul>
+            </div>
+            <ul>
+                <li class="item-nav login"><strong>Login</strong></li>
+                <li class="item-nav jouer"><strong>Jouer</strong></li>
+                <li class="item-nav boutique"><strong>Boutique</strong></li>
+            </ul>
         </div>
     </nav>
-    <div class="container-margin">
-        <div class="container-body quiz-vedette">
-            <div class="container-margin">
-            <h2>Les quiz en vedette</h2>
-            <div class="cards">
-                
-                <div class="card">
-                    <div class="front-face fnb ff1">
-                        <h3>Film</h3>
-                    </div>
-                    <div class="back-face fnb bf1">
-                        <h4 class="contraste"><i>Harry Potter</i></h4>
-                        <a class="buttonbtn bbtn1" href="/harry-potter.html">Lancer le quiz</a>
-                    </div>
-                </div>
-                
-                
-                <div class="card">
-                    <div class="front-face fnb ff2">
-                        <h3>Histoire</h3>
-                    </div>
-                    <div class="back-face fnb bf2">
-                        <h4 class="contraste"><i>Les grandes dates</i></h4>
-                        <a class="buttonbtn bbtn2" href="/game-of-thrones.html">Lancer le quiz</a>
-                    </div>
-                </div>
-                
-                
-                <div class="card">
-                    <div class="front-face fnb ff3">
-                        <h3>Série</h3>
-                    </div>
-                    <div class="back-face fnb bf3">
-                        <h4 class="contraste"><i>Kaamelott</i></h4>
-                        <a class="buttonbtn bbtn3" href="/kaamelott.html">Lancer le quiz</a>
-                    </div>
-                </div>
-                
-                
-                <div class="card">
-                    <div class="front-face fnb ff4 ">
-                        <h3>Animés</h3>
-                    </div>
-                    <div class="back-face fnb bf4">
-                        <h4 class="contraste"><i>One piece</i></h4>
-                        <a class="buttonbtn bbtn4" href="/harry-potter.html">Lancer le quiz</a>
-                    </div>
-                </div>
-                
-                
-                <div class="card">
-                    <div class="front-face fnb ff5">
-                        <h3>Géographie</h3>
-                    </div>
-                    <div class="back-face fnb bf5">
-                        <h4 class="contraste"><i>Les capitales</i></h4>
-                        <a class="buttonbtn bbtn5" href="/harry-potter.html">Lancer le quiz</a>
-                    </div>
-                </div>
-                
-
-
+    <section>
+        <img src="/assets/image/cloud-back.png" id="cloud-back" class="clouds" alt="" />
+        <img src="/assets/image/sun.png" id="astre" alt="" />
+        <div id="title">
+            <div class="img-fq" id="img-f">
+                <img src="/assets/image/F-logo.png" alt="" />
+            </div>
+            <div class="title-d-span" id="tds1">
+                <span class="tsp" id="tsp1">ROGGY</span>
+            </div>
+            <div class="img-fq" id="img-q">
+                <img  id="just-q" src="/assets/image/Q-logo.png" alt="" />
+            </div>
+            <div class="title-d-span" id="tds2">
+                <span class="tsp" id="tsp2">UIZ</span>
             </div>
         </div>
+        <span id="span1">Venez découvrir froggy Quizz.</span>
+        <span id="span2">Sans aucun doute le meilleur quiz Du monde </span>
+        <img src="/assets/image/cloud-mid.png" id="cloud" class="clouds" alt="" />
+        <img src="/assets/image/cloud-contact.png" id="cloud-contact" class="clouds" alt="" />
+    </section>
+    <div class="container-margin">
+        <div class="masque">
+            <div class="container-body quiz-vedette">
+                <div class="container-margin">
+                    <h2>Les quiz en vedette</h2>
+                    <div class="cards">
+
+
+                        <div class="card">
+                            <div class="front-face fnb ff1">
+                                <h3>Film</h3>
+                            </div>
+                            <div class="back-face fnb bf1">
+                                <h4 class="contraste"><i>Harry Potter</i></h4>
+                                <a class="buttonbtn bbtn1" href="/harry-potter.html">Lancer le quiz</a>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="front-face fnb ff2">
+                                <h3>Histoire</h3>
+                            </div>
+                            <div class="back-face fnb bf2">
+                                <h4 class="contraste"><i>Les grandes dates</i></h4>
+                                <a class="buttonbtn bbtn2" href="/game-of-thrones.html">Lancer le quiz</a>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="front-face fnb ff3">
+                                <h3>Série</h3>
+                            </div>
+                            <div class="back-face fnb bf3">
+                                <h4 class="contraste"><i>Kaamelott</i></h4>
+                                <a class="buttonbtn bbtn3" href="/kaamelott.html">Lancer le quiz</a>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="front-face fnb ff4 ">
+                                <h3>Animés</h3>
+                            </div>
+                            <div class="back-face fnb bf4">
+                                <h4 class="contraste"><i>One piece</i></h4>
+                                <a class="buttonbtn bbtn4" href="/harry-potter.html">Lancer le quiz</a>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="front-face fnb ff5">
+                                <h3>Géographie</h3>
+                            </div>
+                            <div class="back-face fnb bf5">
+                                <h4 class="contraste"><i>Les capitales</i></h4>
+                                <a class="buttonbtn bbtn5" href="/harry-potter.html">Lancer le quiz</a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

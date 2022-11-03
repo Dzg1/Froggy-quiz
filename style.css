@@ -3,8 +3,8 @@
     src: url(/assets/font/Apple\ Juice\ Regular.ttf);
 }
 *{
-    --color1 : #f1f1f1;
-    --color2 : #b3b966;
+    --color1 : #f2f2f2;
+    --color2 : #000000;
     --color3 : #e25421;
     --color4 : #262626;
     --font1 : 'applejuice', sans-serif;
@@ -15,7 +15,9 @@
 body{
     margin: 0;
     padding: 0;
+    background: url(/assets/image/background-white-pattoune.png);
 }
+
 
 img{
     max-width: 100%;
@@ -79,12 +81,67 @@ nav {
     width: 60px;
     margin: 5px;
 }
-h1{
-    width: 250px;
-    margin-left: 20px;
-    color: var(--color3);
+.logospan{
+    color: black;
     font-family: var(--font1);
-    font-size: 2rem;
+    font-size: 1.3rem;
+
+}
+.spsp {
+    position: absolute;
+    font-size: 1.5rem;
+    transform:translatex(-200px);
+    transition: .4s ease-out;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container:hover .spsp {
+  transform: translateX(0px);
+}
+.logo-container:hover .img-2{
+transform: translateX(85px);
+}
+.logo-container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-1{
+    position: relative;
+}
+.sp1{
+position: absolute;
+left:130px;
+top:30px;
+height: 30px;
+width: 70px;
+overflow: hidden;
+}
+
+.logo-container-2{
+
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+.img-2{
+    position: absolute;
+    left: 97px;
+    top: 2px;
+    transition-duration: .4s;
+}
+.sp2{
+position: absolute;
+left:230px;
+top:30px;
+height: 30px;
+width: 50px;
+overflow: hidden;
 }
 .nav-right{
     display: flex;
@@ -111,7 +168,6 @@ h1{
     border: var(--color4) 1px solid;
     border-top-right-radius: 20px;
     border-end-end-radius:20px;
-    background:;
     cursor: pointer;
     font-size: 1.5rem;
 }
@@ -155,17 +211,151 @@ body{
     background:white;
     font-family: var(--font3) ;
 }
+
+
+
+
+
+
+
+
+section {
+    width: 100%;
+    height: 145vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    overflow: hidden;
+    background: url(/assets/image/ciel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section img {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    object-fit: contain;
+
+}
+
+.clouds {
+    position: absolute;
+    top: 0;
+}
+
+#cloud-contact {
+    top: 150px;
+    width: 100%;
+}
+
+#cloud {
+    width: 100%;
+}
+
+#cloud-back {
+    object-fit: contain;
+}
+
+#astre {
+    top: -400px;
+    left: -150px;
+
+}
+
+
+
+/* title */
+
+#title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 200px;
+    height: 300px;
+
+}
+
+.img-fq {
+    position: relative;
+    width: 350px;
+    height: 100%;
+}
+
+.img-fq img {
+    position: absolute;
+    top: -25px;
+    left: -60px;
+    width: 300px;
+
+}
+#just-q{
+left:-187px;
+    top: -10px;
+}
+
+
+.title-d-span{
+   
+    overflow: hidden;
+    width: 0px;
+
+}
+.tsp{
+    font-size: 6rem;
+    font-family: var(--font1);
+ ;
+
+
+
+
+
+
+
+
+
+
+
+
+section span {
+    color: white;
+    font-size: 2rem;
+}
+
+#span1 {
+    position: absolute;
+    top: 715px;
+    white-space: nowrap;
+}
+
+#span2 {
+    position: absolute;
+    top: 900px
+}
+
+
+
+
+
+
 .container-margin{
     margin: 0 10%;
 }
-.container-body{
+.masque{
     width: 100%;
-    height: 400px;
-    background: var(--color1);
+    height: 500px;
+overflow: hidden;
+}
+.container-body{
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 2px #0000003d;;
     margin:  60px 0;
     padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 .cards {
     display: flex;
@@ -214,23 +404,23 @@ align-items: flex-start;
 
 .front-face{
     border: var(--color4) 1px solid;
-    background: rgb(179,185,102);
-    background: linear-gradient(147deg, rgba(179,185,102,1) 52%, rgba(226,84,33,1) 100%);
+    background: url(/assets/image/background-white-pattoune.png);
+    background-size: contain;
  }
  .ff2{
     background: url(/assets/image/background-white-pattoune.png);
     background-size: contain;
  }
  .ff3{
-    background: url(/assets/image/background-dark-pattoune.png);
+    background: url(/assets/image/background-white-pattoune.png);
     background-size: contain;
  }
  .ff4{
-    background: url(/assets/image/background-interogation-white.png);
+    background: url(/assets/image/background-white-pattoune.png);
     background-size: contain;
  }
  .ff5{
-    background: url(/assets/image/background-interogation-dark.png);
+    background: url(/assets/image/background-white-pattoune.png);
     background-size: contain;
  }
 .card .fnb.back-face {
@@ -314,12 +504,12 @@ h4{
     width:150px;
     padding: 10px;
     border-radius: 10px;
-    background: rgb(179,185,102);
-    background: linear-gradient(147deg, rgba(179,185,102,1) 52%, rgba(226,84,33,1) 100%);
+    background: url(/assets/image/background-white-pattoune.png);
+    background-size: contain;
     border: none;
     transform: perspective(500px) translateZ(50px);
 transition: .4s ease-out;
-color: var(--color1);
+color: var(--color4);
 font-family: var(--poppins);
 text-align: center;
 border:inset 1px  var(--color4);
@@ -331,19 +521,19 @@ border:inset 1px  var(--color4);
     color: var(--color4);
  }
  .bbtn3 {
-    background: url(/assets/image/background-dark-pattoune.png);
+    background: url(/assets/image/background-white-pattoune.png);
     background-size: contain;
-    color: var(--color1);
+    color: var(--color4);
  }
  .bbtn4 {
-    background: url(/assets/image/background-interogation-white.png);
+    background: url(/assets/image/background-white-pattoune.png);
     background-size: contain;
     color: var(--color4);
  }
  .bbtn5 {
-    background: url(/assets/image//background-interogation-dark.png);
+    background: url(/assets/image//background-white-pattoune.png);
     background-size: contain;
-    color: var(--color1);
+    color: var(--color4);
  }
 
  .buttonbtn:hover {
