@@ -12,14 +12,14 @@ let justQ = document.querySelector("#just-q")
 
 document.addEventListener("scroll",() => {
     let value = window.scrollY;
-fqz.style.top = value * 1  +200+ "px";
+fqz.style.top = value   +200+ "px";
 if(value < 390){
-    tds1.style.width =  value * 1 + "px" ;
-    tds2.style.width =  value * 1 + "px" ;
+    roggy.style.width =  value  + "px" ;
+    uiz.style.width =  value  + "px" ;
 }
     span1.style.marginLeft = value * 2 + "px";
 if (value < 160  ){
-    justQ.style.left= -187 + value * 1 + "px";
+    justQ.style.left= -130 + value  + "px";
 }
 
 astre.style.top = value * 1.1 -400 + "px";
