@@ -3,7 +3,7 @@
     src: url(/assets/font/Apple\ Juice\ Regular.ttf);
 }
 *{
-    --color1 : #f2f2f2;
+    --color1 : white;
     --color2 : #000000;
     --color3 : #e25421;
     --color4 : #262626;
@@ -281,21 +281,23 @@ section img {
 }
 
 .img-fq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 350px;
+    width: 500px;
     height: 100%;
+    background: rgba(0, 0, 255, 0.273);
 }
 
 .img-fq img {
     position: absolute;
-    top: -25px;
-    left: 160px;
-    width: 300px;
 
+    width: 300px;
+background: rgba(255, 0, 0, 0.121);
 }
 #just-q{
-left:-130px;
-    top: -10px;
+
 }
 
 
@@ -303,20 +305,16 @@ left:-130px;
    color: var(--color2);
     overflow: hidden;
     width: 0px;
-
 }
 .tsp{
     font-size: 6rem;
     font-family: var(--font1);
+    background: orange;
 }
 #img-q{
-
 }
- 
-#tds2{
-position:absolute;
 
-bottom: 0;
+#tds2{
 }
 
 
@@ -330,7 +328,7 @@ bottom: 0;
 
 
 section span {
-    color: white;
+ 
     font-size: 2rem;
 }
 
